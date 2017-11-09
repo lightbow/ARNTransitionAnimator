@@ -229,7 +229,7 @@ open class ARNTransitionAnimator: UIPercentDrivenInteractiveTransition {
 
 extension ARNTransitionAnimator {
     
-    internal func handlePan(_ recognizer: UIPanGestureRecognizer) {
+    @objc internal func handlePan(_ recognizer: UIPanGestureRecognizer) {
         let window : UIWindow?
         switch self.interactiveType {
         case .push, .present:
